@@ -1,0 +1,37 @@
+sum1=0
+sum2=0
+try:
+    while(1):
+        A,B=input().split()
+        if(A=='C'):
+            if(B=='Z'):
+                sum1+=3+3
+                sum2+=1+6
+            elif(B=='Y'):
+                sum1+=2+0
+                sum2+=3+3
+            else:
+                sum1+=1+6
+                sum2+=2+0
+        elif(A=='B'):
+            if(B=='Z'):
+                sum1+=3+6
+                sum2+=3+6
+            elif(B=='Y'):
+                sum1+=2+3
+                sum2+=2+3
+            else:
+                sum1+=1+0
+                sum2+=1+0
+        else:
+            if(B=='Z'):
+                sum1+=3+0
+                sum2+=2+6
+            elif(B=='Y'):
+                sum1+=2+6
+                sum2+=1+3
+            else:
+                sum1+=1+3
+                sum2+=3+0
+except:
+    print(sum1,sum2)
